@@ -2238,7 +2238,7 @@
   "resolved" "https://registry.npmjs.org/strip-json-comments/-/strip-json-comments-3.1.1.tgz"
   "version" "3.1.1"
 
-"stripe@^8.209.0":
+"stripe@^8.222.0":
   "integrity" "sha512-hrA79fjmN2Eb6K3kxkDzU4ODeVGGjXQsuVaAPSUro6I9MM3X+BvIsVqdphm3BXWfimAGFvUqWtPtHy25mICY1w=="
   "resolved" "https://registry.npmjs.org/stripe/-/stripe-8.222.0.tgz"
   "version" "8.222.0"
