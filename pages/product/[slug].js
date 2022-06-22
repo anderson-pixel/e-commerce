@@ -34,7 +34,6 @@ const ProductDetails = ({ product, products }) => {
             ))}
           </div>
         </div>
-
         <div className="product-detail-desc">
           <h1>{name}</h1>
           <div className="reviews">
@@ -46,7 +45,7 @@ const ProductDetails = ({ product, products }) => {
               <AiOutlineStar />
             </div>
             <p>
-              (20)
+              (10)
             </p>
           </div>
           <h4>Details: </h4>
