@@ -29,7 +29,7 @@ width: 100%;
 .navbar-container{
   display: flex;
   justify-content: space-between;
-  margin: 6px 18px;
+  height: 2.5rem;
   position: relative;
 }
 .marquee-text{
@@ -142,7 +142,7 @@ width: 100%;
   font-size: 20px;
 }
 .hero-banner-container button{
-   border-radius: 15px;
+  border-radius: 15px;
   padding: 10px 16px;
   background-color: #f02d34;
   color: white;
