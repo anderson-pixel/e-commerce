@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { client } from '../lib/client';
-import { Product, FooterBanner, HeroBanner } from '../components';
+import { Product, FooterBanner, HeroBanner, Faq } from '../components';
 
 const Home = ({ products, bannerData }) => (
   <div>
@@ -16,6 +16,7 @@ const Home = ({ products, bannerData }) => (
     </div>
 
     <FooterBanner footerBanner={bannerData && bannerData[0]} />
+    <Faq/>
   </div>
 );
 
