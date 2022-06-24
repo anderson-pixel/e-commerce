@@ -1,62 +1,77 @@
-import React from 'react'
+import * as React from "react";
+import { MdStar } from "react-icons/md";
+import fontawesome from '@fortawesome/fontawesome'
+import { AiOutlineArrowDown } from "react-icons/ai";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { faCheckSquare, faCoffee } from '@fortawesome/fontawesome-free-solid'
 
-function Faq() {
-  return (
-    <div className='faq'>
-    <h1 classname="heading"> questions & <span>answers</span> </h1>
-    <div classname="accordion-container">
-    <div classname="accordion">
-        <div classname="accordion-heading">
-            <h3>lorem</h3>
-            <i classname="fas fa-angle-down"></i>
-        </div>
-        <p classname="accordioin-content">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, laboriosam non eligendi reiciendis quis laborum exercitationem voluptatibus autem harum nihil nisi sed mollitia, quam blanditiis architecto cumque? Sit, voluptate maiores.
-        </p>
-    </div>
-
-    <div classname="accordion">
-        <div classname="accordion-heading">
-            <h3>lorem</h3>
-            <i classname="fas fa-angle-down"></i>
-        </div>
-        <p classname="accordioin-content">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, laboriosam non eligendi reiciendis quis laborum exercitationem voluptatibus autem harum nihil nisi sed mollitia, quam blanditiis architecto cumque? Sit, voluptate maiores.
-        </p>
-    </div>
-
-    <div classname="accordion">
-        <div classname="accordion-heading">
-            <h3>lorem</h3>
-            <i classname="fas fa-angle-down"></i>
-        </div>
-        <p classname="accordioin-content">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, laboriosam non eligendi reiciendis quis laborum exercitationem voluptatibus autem harum nihil nisi sed mollitia, quam blanditiis architecto cumque? Sit, voluptate maiores.
-        </p>
-    </div>
-
-    <div classname="accordion">
-        <div classname="accordion-heading">
-            <h3>lorem</h3>
-            <i classname="fas fa-angle-down"></i>
-        </div>
-        <p classname="accordioin-content">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, laboriosam non eligendi reiciendis quis laborum exercitationem voluptatibus autem harum nihil nisi sed mollitia, quam blanditiis architecto cumque? Sit, voluptate maiores.
-        </p>
-    </div>
-
-    <div classname="accordion">
-        <div classname="accordion-heading">
-            <h3>lorem</h3>
-            <i classname="fas fa-angle-down"></i>
-        </div>
-        <p classname="accordioin-content">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, laboriosam non eligendi reiciendis quis laborum exercitationem voluptatibus autem harum nihil nisi sed mollitia, quam blanditiis architecto cumque? Sit, voluptate maiores.
-        </p>
-    </div>
-  </div>
-</div>
-  )
+if (process.browser) {
+document.querySelectorAll('.accordion-container .accordion').forEach(accordion =>{
+    accordion.onclick = () =>{
+        accordion.classList.toggle('active');
+    }
+});
 }
 
-export default Faq;
+export default function Faq() {
+
+  return (
+    <div className="faq">
+    <h1 className="heading">Q&<span>A</span></h1>
+
+<div className="accordion-container">
+
+<div className="accordion">
+        <div className="accordion-heading">
+            <h3>lorem</h3>
+            <i id='oklin' style={{color: 'white'}} className="fas fa-angle-down"></i>
+        </div>
+        <p className="accordioin-content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, laboriosam non eligendi reiciendis quis laborum exercitationem voluptatibus autem harum nihil nisi sed mollitia, quam blanditiis architecto cumque? Sit, voluptate maiores.
+        </p>
+    </div>
+
+
+    <div className="accordion">
+        <div className="accordion-heading">
+            <h3>lorem</h3>
+            <i id='oklin' style={{color: 'white'}} className="fas fa-angle-down"></i>
+        </div>
+        <p className="accordioin-content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, laboriosam non eligendi reiciendis quis laborum exercitationem voluptatibus autem harum nihil nisi sed mollitia, quam blanditiis architecto cumque? Sit, voluptate maiores.
+        </p>
+    </div>
+
+    <div className="accordion">
+        <div className="accordion-heading">
+            <h3>lorem</h3>
+            <i id='oklin' style={{color: 'white'}} className="fas fa-angle-down"></i>
+        </div>
+        <p className="accordioin-content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, laboriosam non eligendi reiciendis quis laborum exercitationem voluptatibus autem harum nihil nisi sed mollitia, quam blanditiis architecto cumque? Sit, voluptate maiores.
+        </p>
+    </div>
+
+    <div className="accordion">
+        <div className="accordion-heading">
+            <h3>lorem</h3>
+            <i id='oklin' style={{color: 'white'}} className="fas fa-angle-down"></i>
+        </div>
+        <p className="accordioin-content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, laboriosam non eligendi reiciendis quis laborum exercitationem voluptatibus autem harum nihil nisi sed mollitia, quam blanditiis architecto cumque? Sit, voluptate maiores.
+        </p>
+    </div>
+
+    <div className="accordion">
+        <div className="accordion-heading">
+            <h3>Lorem</h3>
+            <i id='oklin' style={{color: 'white'}} className="fas fa-angle-down"></i>
+        </div>
+        <p className="accordioin-content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, laboriosam non eligendi reiciendis quis laborum exercitationem voluptatibus autem harum nihil nisi sed mollitia, quam blanditiis architecto cumque? Sit, voluptate maiores.
+        </p>
+    </div>
+</div>
+    </div>
+  );
+}

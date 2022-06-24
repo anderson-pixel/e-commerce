@@ -16,6 +16,15 @@ a {
   text-decoration: none;
 }
 
+$blue : #0984e3;
+$black : #333;
+$white : #fff;
+$gold : gold;
+$light-color : #666;
+$light-bg : #eee;
+$border : .2rem solid $black;
+$box-shadow : 0 .5rem 1rem rgba(0,0,0,.2);
+
 .main-container{
 max-width: 1400px; 
 margin: auto;
@@ -761,67 +770,107 @@ margin-top: 160px;
   margin: auto;
 }
 }
-.faq .accordion-container {
-  max-width: 70rem;
-  margin: 0 auto;
+.accordion-container{
+    max-width: 70rem;
+    margin:0 auto;
 }
-
-.faq .accordion-container .accordion {
-  background: #fff;
-  margin-bottom: 1.5rem;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   
+  span {
+    color: #f02d34;
+    padding: 50px 0px;
+  }
 }
+.accordion{
+background: $white;
+margin-bottom: 1rem;
+box-shadow: $box-shadow;
 
-.faq .accordion-container .accordion:last-child {
+&:last-child{
   margin-bottom: .5rem;
 }
 
-.faq .accordion-container .accordion.active .accordion-heading {
-  background: #0984e3;
+&.active{
+
+  .accordion-heading{
+    background: #f02d34;  
+    i{
+      color: white;
+      transform: rotate(180deg);
+    }
+  }
+
+  .accordioin-content{
+    display: block;
+  }
+}
 }
 
-.faq .accordion-container .accordion.active .accordion-heading i {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+      .accordion-heading{
+        padding:2rem;
+        display: flex;
+        align-items: center;
+        gap:1rem;
+        justify-content: space-between;
+        background: $black;
+        cursor: pointer;
+        
+        h3{
+          font-size: 2rem;
+          color:$white;
+        }
+
+        i{
+          font-size: 2rem;
+          color:$white;
+        }
+      }
+
+.accordioin-content{
+      padding:2rem;
+      font-size: 1.5rem;
+      line-height: 2;
+      color:$light-color;
+      display: none;
+      animation:fadeIn .2s linear;
 }
 
-.faq .accordion-container .accordion.active .accordioin-content {
-  display: block;
-}
+.review{
 
-.faq .accordion-container .accordion .accordion-heading {
-  padding: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 1rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background: #333;
-  cursor: pointer;
-}
+  .slide{
+    width: 35rem;
+    padding:3rem;
+    text-align: center;
+    border:$border;
+    box-shadow: $box-shadow;
+    border-radius: .5rem;
+    background: $white;
 
-.faq .accordion-container .accordion .accordion-heading h3 {
-  font-size: 2rem;
-  color: #fff;
-}
+    img{
+      height: 10rem;
+      width: 10rem;
+      border-radius: 50%;
+      margin-bottom: .5rem;
+    }
 
-.faq .accordion-container .accordion .accordion-heading i {
-  font-size: 2rem;
-  color: #fff;
-}
+    h3{
+      font-size: 2rem;
+      color:$black;
+    }
 
-.faq .accordion-container .accordioin-content {
-  padding: 2rem;
-  font-size: 1.5rem;
-  line-height: 2;
-  color: #666;
-  display: none;
-  -webkit-animation: fadeIn .2s linear;
-          animation: fadeIn .2s linear;
+    span{
+      color:#f02d34;
+      font-size: 1.7rem;
+    }
+
+    p{
+      font-size: 1.5rem;
+      line-height: 2;
+      color:$light-color;
+      padding-top: 1rem;
+    }
+  }
 }
