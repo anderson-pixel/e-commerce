@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { AiOutlineShopping} from 'react-icons/ai'
+import { BsFillPersonFill} from 'react-icons/bs'
 
 import { Cart } from './';
 import { useStateContext} from '../context/StateContext';
@@ -13,6 +14,9 @@ const Navbar = () => {
       <p className="logo">
         <Link href="/">JSM Headphones</Link>
       </p>
+      <button type="button" id='cart-icon2' onClick={() => setShowCart(true)}>
+        <BsFillPersonFill/>
+      </button>
 
       <button type="button" className="cart-icon" onClick={() => setShowCart(true)}>
         <AiOutlineShopping/>

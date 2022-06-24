@@ -90,6 +90,15 @@ width: 100%;
 .cart-icon:hover{
   transform: scale(1.1,1.1);
 }
+#cart-icon2 {
+  font-size: 25px;
+  color: gray;
+  cursor: pointer;
+  position: relative;
+  transition: transform .4s ease;
+  border: none;
+  background-color: transparent;
+}
 .cart-item-qty{
   position: absolute;
   right: -8px;
@@ -283,16 +292,14 @@ text-align: end;
   z-index: 100;
   /* will-change: transform; */
   transition: all 1s ease-in-out;
-
 }
 .cart-container{
   height: 100vh;
-  width: 600px;
+  width: 400px;
   background-color: white;
   float: right;
   padding: 40px 10px;
   position: relative;
-  
 }
 
 .footer-container{
@@ -778,10 +785,11 @@ margin-top: 160px;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 30px;
    
   span {
     color: #f02d34;
-    padding: 50px 0px;
+    padding: 40px 0px;
   }
 }
 .accordion{
@@ -816,6 +824,7 @@ box-shadow: $box-shadow;
         gap:1rem;
         justify-content: space-between;
         background: $black;
+        height: 1.5rem;
         cursor: pointer;
         
         h3{
