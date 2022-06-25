@@ -14,7 +14,7 @@ const Navbar = () => {
       <p className="logo">
         <Link href="/">JSM Headphones</Link>
       </p>
-      <button type="button" id='cart-icon2' onClick={() => setShowCart(true)}>
+      <button type="button" className="cart-icon" id='cart-ic' onClick=''>
         <BsFillPersonFill/>
       </button>
 
