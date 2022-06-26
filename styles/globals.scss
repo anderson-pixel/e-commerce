@@ -1140,7 +1140,7 @@ color:$black;
 .banner{
 
 .box-container{
-  @include grid(31rem);
+  @include grid(10rem);
 
   .box{
     position: relative;
