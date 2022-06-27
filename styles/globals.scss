@@ -35,10 +35,6 @@ $box-shadow : 0 .5rem 1rem rgba(0,0,0,.2);
 max-width: 1400px; 
 margin: auto;
 width: 100%;
-
-}
-.layout{
-  padding: 10px;
 }
 
 .navbar-container{
@@ -81,8 +77,8 @@ width: 100%;
 }
 .logo{
   color: gray;
-  font-size: 18px;
-
+  font-size: 12px;
+  margin: 12px 10px;
 }
 .cart-icon{
   font-size: 25px;
@@ -92,13 +88,14 @@ width: 100%;
   transition: transform .4s ease;
   border: none;
   background-color: transparent;
+  margin-right: 20px;
 }
 .cart-icon:hover{
   transform: scale(1.1,1.1);
 }
 
 #cart-ic {
-  margin-left: 71rem;
+  margin-left: 75rem;
 }
 .cart-item-qty{
   position: absolute;
@@ -957,7 +954,7 @@ box-shadow: $box-shadow;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:1rem 9%;
+  padding: 1rem 9%;
 
   .logo{
     font-size: 2.5rem;
@@ -1140,7 +1137,7 @@ color:$black;
 .banner{
 
 .box-container{
-  @include grid(10rem);
+  @include grid(35rem);
 
   .box{
     position: relative;
@@ -1148,10 +1145,11 @@ color:$black;
     border:$border;
     border-radius: .5rem;
     overflow:hidden;
+    cursor: pointer;
     box-shadow: $box-shadow;
 
     &:hover img{
-      transform: scale(1.1);
+      transform: scale(1.1,1.1,);
     }
 
     img{
@@ -1177,5 +1175,47 @@ color:$black;
       }
     }
   }
+}
+.home{
+  background: $white;
+
+  .slide{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+    min-height: 40rem;
+    padding:2rem 0;
+    
+    .image{
+      flex:1 1 42rem;
+      text-align: center;
+
+      img{
+        height: 30rem;
+      }
+    }
+
+    .content{
+      flex:1 1 42rem;
+
+      span{
+        font-size: 2rem;
+        color:$blue;
+      }
+
+      h3{
+        padding-top: .5rem;
+        color:$black;
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+  font-size: 3rem;
+  color:$black;
 }
 }

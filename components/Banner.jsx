@@ -7,7 +7,7 @@ function Banner() {
 
 <div class="box-container">
 
-    <a href="#" class="box">
+    <a class="box">
         <img src="banner-1.jpg" alt=""/>
         <div class="content">
             <span>special offer</span>
@@ -15,7 +15,7 @@ function Banner() {
         </div>
     </a>
 
-    <a href="#" class="box">
+    <a class="box">
         <img src="banner-2.jpg" alt=""/>
         <div class="content">
             <span>special offer</span>
@@ -23,7 +23,7 @@ function Banner() {
         </div>
     </a>
 
-    <a href="#" class="box">
+    <a class="box">
         <img src="banner-3.jpg" alt=""/>
         <div class="content">
             <span>special offer</span>
