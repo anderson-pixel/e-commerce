@@ -410,23 +410,18 @@ padding: 30px 65px;
   margin: auto;
 }
 .btn{
-  width: 100%;
-  max-width: 400px;
-  padding: 10px 12px;
-  border-radius: 15px;
-  border: none;
-  font-size: 20px;
-  margin-top: 10px;
-  margin-top: 40px;
-  text-transform: uppercase;
-  background-color: #f02d34;
-  color: #fff;
+  margin-top: 1rem;
+  display: inline-block;
+  border-radius: .5rem;
+  padding:1rem 3rem;
+  font-size: 1.7rem;
+  color:$white;
   cursor: pointer;
-    transform: scale(1, 1);
-  transition: transform 0.5s ease;
-}
-.btn:hover{
-  transform: scale(1.1,1.1);
+  background: $blue;
+
+  &:hover{
+    background: $black;
+  }
 }
 .product-detail-container{
   display: flex;
@@ -1090,54 +1085,10 @@ box-shadow: $box-shadow;
   }
 }
 
-
-.home{
-background: $white;
-
-.slide{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap:2rem;
-  min-height: 40rem;
-  padding:2rem 0;
-  
-  .image{
-    flex:1 1 42rem;
-    text-align: center;
-
-    img{
-      height: 30rem;
-    }
-  }
-
-  .content{
-    flex:1 1 42rem;
-
-    span{
-      font-size: 2rem;
-      color:$blue;
-    }
-
-    h3{
-      padding-top: .5rem;
-      color:$black;
-      font-size: 3rem;
-    }
-  }
-}
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after{
-font-size: 3rem;
-color:$black;
-}
-
 .banner{
 
 .box-container{
-  @include grid(35rem);
+  @include grid(20rem);
 
   .box{
     position: relative;
@@ -1175,47 +1126,5 @@ color:$black;
       }
     }
   }
-}
-.home{
-  background: $white;
-
-  .slide{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap:2rem;
-    min-height: 40rem;
-    padding:2rem 0;
-    
-    .image{
-      flex:1 1 42rem;
-      text-align: center;
-
-      img{
-        height: 30rem;
-      }
-    }
-
-    .content{
-      flex:1 1 42rem;
-
-      span{
-        font-size: 2rem;
-        color:$blue;
-      }
-
-      h3{
-        padding-top: .5rem;
-        color:$black;
-        font-size: 3rem;
-      }
-    }
-  }
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after{
-  font-size: 3rem;
-  color:$black;
 }
 }

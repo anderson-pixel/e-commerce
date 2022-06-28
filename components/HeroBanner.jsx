@@ -27,36 +27,30 @@ const HeroBanner = ({ heroBanner }) => {
       onSwiper={swiper => console.log('swiper')}
       className={styles.myswiper}
     >
-      <div class="box-container">
-      <SwiperSlide className={styles.swiperslide}>
-    <a class="box">
-        <img src="banner-1.jpg" alt=""/>
-        <div class="content">
-            <span>special offer</span>
-            <h3>upto 50% off</h3>
+    <div className="swipe-container">
+    <SwiperSlide className={styles.swiperslide}>
+        <div style={{display: 'flex',
+      alignItems: 'center',
+      flexWrap: 'wrap',
+      gap:'2rem',
+      minHeight: '40rem',
+      padding:'2rem 0'}}className="swiper-slide slide">
+
+            <div style={{flex: '1 1 42rem',textAlign: 'center'}} className="image">
+                <img style={{height: '30rem'}} src="home-img-1.jpg" alt=""/>
+            </div>
+            <div className="content" style={{flex:'1 1 42rem'}}>
+                <span style={{fontSize: '2rem',
+          color:'blue'}}>upto 50% off</span>
+                <h3 style={{paddingTop: '.5rem',
+          color: 'black',
+          fontSize: '3rem'}}>headphones</h3>
+                <a href="#" className="btn">shop now</a>
+            </div>
         </div>
-    </a>
-      </SwiperSlide>
-      <SwiperSlide className={styles.swiperslide}>
-      <a class="box">
-        <img src="banner-1.jpg" alt=""/>
-        <div class="content">
-            <span>special offer</span>
-            <h3>upto 50% off</h3>
-        </div>
-      </a>
-      </SwiperSlide>
-      <SwiperSlide className={styles.swiperslide}>
-      <a class="box">
-        <img src="banner-1.jpg" alt=""/>
-        <div class="content">
-            <span>special offer</span>
-            <h3>upto 50% off</h3>
-        </div>
-      </a>
-      </SwiperSlide>
+
+        </SwiperSlide>
       </div>
-      ...
     </Swiper>
     </div>
     </section>

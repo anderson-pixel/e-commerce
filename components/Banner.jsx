@@ -3,29 +3,29 @@ import React from 'react'
 function Banner() {
   return (
     <div>
-        <section class="banner">
+    <section className="banner">
 
-<div class="box-container">
+<div className="box-container">
 
-    <a class="box">
+    <a className="box">
         <img src="banner-1.jpg" alt=""/>
-        <div class="content">
+        <div className="content">
             <span>special offer</span>
             <h3>upto 50% off</h3>
         </div>
     </a>
 
-    <a class="box">
+    <a className="box">
         <img src="banner-2.jpg" alt=""/>
-        <div class="content">
+        <div className="content">
             <span>special offer</span>
             <h3>upto 50% off</h3>
         </div>
     </a>
 
-    <a class="box">
+    <a className="box">
         <img src="banner-3.jpg" alt=""/>
-        <div class="content">
+        <div className="content">
             <span>special offer</span>
             <h3>upto 50% off</h3>
         </div>
