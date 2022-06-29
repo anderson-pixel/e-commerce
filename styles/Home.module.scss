@@ -1,0 +1,59 @@
+.container {
+    .myswiper {
+        width: 100%;
+        height: auto;
+        .swiperslide {
+            transform: trnslateZ(0);
+            img {
+                width: 35%;
+                height: 70%;
+                object-fit: cover;
+            }
+        } 
+    }
+}
+.swiperNavNext,
+.swiperNavPrev {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.swiperNavPrev {
+    left: 0;
+    background-image: url('/images/arrow_left.png');
+}
+.swiperNavNext {
+    right: 0;
+    background-image: url('/images/arrow_right.png');
+}
+
+.swiper-button-next,
+.swipper-button-prev {
+    color: white;
+}
+
+.swiper-button-prev {
+    background-image: url('../public/banner-1.jpg');
+}
+.swiper-button-next {
+    background-image: url('../public/banner-2.jpg');
+}
+
+.swipper-button-next,
+.swiper-button-prev {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}   
+.swiper-buton-next::after,
+.swiper-buton-next::after{
+    display: none;
+}
+
