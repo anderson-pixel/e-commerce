@@ -1,11 +1,12 @@
 import React, {useRef} from 'react';
 import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation,EffectFade, Pagination, Autoplay, Scrollbar, A11y } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import { Navigation,EffectFade, Pagination, Scrollbar, A11y } from 'swiper';
+import 'swiper/css/autoplay';
 import Script from 'next/script';
 import styles from '../styles/Home.module.scss';
 
@@ -22,16 +23,12 @@ const HeroBanner = ({ heroBanner }) => {
     <section className="home">
     <div className={styles.container}>
     <Swiper
-      modules={[Navigation, EffectFade]}
-
-      navigation={{
-        prevEl: swiperNavPrevRef.current,
-        nextEl: swiperNavNextRef.current,
-      }}
-      effect={'fade'}
-      speed={800}
+      modules={[Navigation, EffectFade, Autoplay]}
       slidesPerView={1}
-      loop
+      navigation
+      loop={true}
+      autoplay={{delay: 2500}}
+      pagination={{ clickable: true }}
       className={styles.myswiper}
 
       onInit={(swiper) => {
@@ -42,18 +39,47 @@ const HeroBanner = ({ heroBanner }) => {
       }}
     >
       <SwiperSlide className={styles.swiperslide}>
-        <img src='home-img-1.jpg' alt='' />
+      <div className='image' style={{ flex:'8',
+                textAlign: 'center'}}>
+      <img style={{height: '22rem'}} src='home-img-1.jpg' alt='' />
+      </div>
+      <div className="content" style={{flex: '1 1 42rem'}}>
+      <span style={{fontSize: '2rem',
+      color:'#01bf71'}}>upto 50% off</span>
+      <h3 style={{paddingTop: '.5rem',
+      color:'black',
+      fontSize: '3rem'}}>smartphones</h3>
+      <a href="#" className="btn">shop now</a>
+      </div>
       </SwiperSlide>
       <SwiperSlide className={styles.swiperslide}>
-        <img src='home-img-2.jpg' alt='' />
+      <div className='image' style={{ flex:'8',
+                textAlign: 'center'}}>
+      <img style={{height: '22rem'}} src='home-img-2.jpg' alt='' />
+      </div>
+      <div className="content" style={{flex: '1 1 42rem'}}>
+      <span style={{fontSize: '2rem',
+        color:'#01bf71'}}>upto 50% off</span>
+            <h3 style={{paddingTop: '.5rem',
+        color:'black',
+        fontSize: '3rem'}}>smartphones</h3>
+                <a href="#" className="btn">shop now</a>
+          </div>
       </SwiperSlide>
       <SwiperSlide className={styles.swiperslide}>
-        <img src='home-img-3.jpg' alt='' />
+      <div className='image' style={{ flex:'8',
+                textAlign: 'center'}}>
+      <img style={{height: '22rem'}} src='home-img-3.jpg' alt='' />
+      </div>
+      <div className="content" style={{flex: '1 1 42rem'}}>
+      <span style={{fontSize: '2rem',
+        color:'#01bf71'}}>upto 50% off</span>
+            <h3 style={{paddingTop: '.5rem',
+        color:'black',
+        fontSize: '3rem'}}>smartphones</h3>
+                <a href="#" className="btn">shop now</a>
+          </div>
       </SwiperSlide>
-      <div className={styles.swiperNavPrev} ref=
-      {swiperNavPrevRef}></div>
-      <div className={styles.swiperNavNext} ref=
-      {swiperNavNextRef}></div>
    </Swiper>
     </div>
     </section>
