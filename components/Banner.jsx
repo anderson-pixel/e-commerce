@@ -2,39 +2,51 @@ import React from 'react'
 
 function Banner() {
   return (
-    <div>
-    <section className="banner">
-
-<div className="box-container">
-
-    <a className="box">
-        <img src="banner-1.jpg" alt=""/>
-        <div className="content">
-            <span>special offer</span>
-            <h3>upto 50% off</h3>
-        </div>
-    </a>
-
-    <a className="box">
-        <img src="banner-2.jpg" alt=""/>
-        <div className="content">
-            <span>special offer</span>
-            <h3>upto 50% off</h3>
-        </div>
-    </a>
-
-    <a className="box">
-        <img src="banner-3.jpg" alt=""/>
-        <div className="content">
-            <span>special offer</span>
-            <h3>upto 50% off</h3>
-        </div>
-    </a>
     
+<section class="category">
+
+<h1 class="heading"> shop by <span>category</span> </h1>
+
+<div class="box-container">
+
+    <a href="#" className="box">
+        <img src="home-img-3.jpg" alt=""/>
+        <h3>televisions</h3>
+    </a>
+
+    <a href="#" className="box">
+        <img src="home-img-3.jpg" alt=""/>
+        <h3>smartphones</h3>
+    </a>
+
+    <a href="#" className="box">
+        <img src="home-img-3.jpg" alt=""/>
+        <h3>headphones</h3>
+    </a>
+
+    <a href="#" className="box">
+        <img src="home-img-3.jpg" alt=""/>
+        <h3>smartwatches</h3>
+    </a>
+
+    <a href="#" className="box">
+        <img src="home-img-3.jpg" alt=""/>
+        <h3>games</h3>
+    </a>
+
+    <a href="#" className="box">
+        <img src="home-img-3.jpg" alt=""/>
+        <h3>camera</h3>
+    </a>
+
+    <a href="#" className="box">
+        <img src="home-img-3.jpg" alt=""/>
+        <h3>speakers</h3>
+    </a>
+
 </div>
 
 </section>
-    </div>
   )
 }
 
