@@ -41,7 +41,7 @@ const HeroBanner = ({ heroBanner }) => {
       <SwiperSlide className={styles.swiperslide}>
       <div className='image' style={{ flex:'8',
                 textAlign: 'center'}}>
-      <img style={{height: '22rem'}} src='home-img-1.jpg' alt='' />
+      <img style={{height: '25rem'}} src='home-img-1.jpg' alt='' />
       </div>
       <div className="content" style={{flex: '1 1 42rem'}}>
       <span style={{fontSize: '2rem',
