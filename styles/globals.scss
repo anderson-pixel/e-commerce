@@ -35,6 +35,22 @@ max-width: 1400px;
 margin: auto;
 width: 100%;
 }
+.banner-sec{
+  width: 100%;
+  height: auto;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.b-parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
 #header {
   display: -webkit-box;
 	display: -ms-flexbox;

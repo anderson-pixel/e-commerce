@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
       <Layout>
         <Toaster />
         <Component {...pageProps} />
-      </Layout>
+        </Layout>
     </StateContext>
   )
 }

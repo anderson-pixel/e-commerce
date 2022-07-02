@@ -1,12 +1,13 @@
 import React from 'react';
 
 import { client } from '../lib/client';
-import { Product, FooterBanner, HeroBanner, Faq, SideBar, } from '../components';
+import { Product, FooterBanner, HeroBanner, Faq, SideBar, Modal, } from '../components';
+import Category from '../components/Category';
 import Banner from '../components/Banner';
 
 const Home = ({ products, bannerData }) => (
   <div>
-     <HeroBanner heroBanner={bannerData.length && bannerData[0]}  />
+    <HeroBanner heroBanner={bannerData.length && bannerData[0]}  />
     <div className="products-heading">
       <h2>Best Seller Products</h2>
       <p>speaker There are many variations passages</p>
@@ -16,6 +17,7 @@ const Home = ({ products, bannerData }) => (
       {products?.map((product) => <Product key={product._id} product={product} />)}
     </div>
     <Banner />
+    <Category />
     <Faq/>
   </div>
 );
