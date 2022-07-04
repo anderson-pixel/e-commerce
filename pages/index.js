@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { client } from '../lib/client';
-import { Product, FooterBanner, HeroBanner, Faq, SideBar, Modal, } from '../components';
+import { Product, FooterBanner, HeroBanner, SideBar, Modal, Footer, } from '../components';
 import Category from '../components/Category';
 import Banner from '../components/Banner';
 
@@ -18,7 +18,6 @@ const Home = ({ products, bannerData }) => (
     </div>
     <Banner />
     <Category />
-    <Faq/>
   </div>
 );
 
