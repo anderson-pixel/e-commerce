@@ -4,10 +4,10 @@ import { AiFillLinkedin, AiOutlineGithub} from 'react-icons/ai';
 const Footer = () => {
   return (
     <div className="footer-container">
-      <p>jgrdngrdgnidrngjkhnjthth</p>
+      <p>Made By Anderson Pereira 2022</p>
       <p className="icons">
-        <AiFillLinkedin />
-        <AiOutlineGithub />
+        <AiFillLinkedin style={{cursor: 'pointer'}}/>
+        <AiOutlineGithub style={{cursor: 'pointer'}}/>
       </p>
     </div>
   )
