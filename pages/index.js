@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { client } from '../lib/client';
-import { Product, FooterBanner, HeroBanner, SideBar, Modal, Footer, } from '../components';
+import { Product, FooterBanner, HeroBanner, SideBar, Modal, Footer, Burger, } from '../components';
 import Category from '../components/Category';
 import Banner from '../components/Banner';
 

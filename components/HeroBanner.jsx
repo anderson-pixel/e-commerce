@@ -22,6 +22,7 @@ const HeroBanner = ({ heroBanner }) => {
     <>
     <section className="home">
     <div className={styles.container}>
+    <div style={{overflow: 'hidden'}} className="swiper-clip">
     <Swiper
       modules={[Navigation, EffectFade, Autoplay]}
       slidesPerView={1}
@@ -81,6 +82,7 @@ const HeroBanner = ({ heroBanner }) => {
           </div>
       </SwiperSlide>
    </Swiper>
+   </div>
     </div>
     </section>
     </>
