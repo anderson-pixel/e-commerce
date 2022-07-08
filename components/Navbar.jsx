@@ -84,7 +84,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     height: "100vh",
     background: "linear-gradient(150deg, #b1bfd8 0%, #01bf71 74%)",
-    transform: "translateX(100%)",
+    transform: "translateX(-120%)",
     transition: "all 0.5s ease-in-out",
   },
   activeSidenav: {
@@ -94,18 +94,18 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
     borderRadius: "15px",
     background: "linear-gradient(150deg, #30aa77  0%, #51cd99 94%)",
-    transform: "translateX(50%)",
+    transform: "translateX(-90%)",
     transition: "all 0.5s ease-in-out",
   },
   ul: {
     listStyleType: "none",
     "& li": {
-      padding: "60px 280px",
+      padding: "60px 1235px",
     },
   },
   a: {
     margin: "20px 20px",
-    color: "#fff",
+    color: "white",
 
     "&hover":{
       fontSize: "25px"
