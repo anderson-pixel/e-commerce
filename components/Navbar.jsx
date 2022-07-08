@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   },
   hamburber: {
     width: "30px",
-    height: "5.5px",
+    height: "3px",
     background: "#000",
     borderRadius: "5px",
     boxShadow: "0 2px 5px rgb(255, 101, 47,.2)",
@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
       content: "''",
       position: "absolute",
       width: "30px",
-      height: "5.5px",
+      height: "3px",
       background: "#000",
       borderRadius: "5px",
       transition: "all 0.5s ease-in-out",
@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
       content: "''",
       position: "absolute",
       width: "30px",
-      height: "5.5px",
+      height: "3px",
       background: "#000",
       borderRadius: "5px",
       transition: "all 0.5s ease-in-out",
@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
   },
   activeHamburger: {
     width: "30px",
-    height: "5.5px",
+    height: "3px",
     borderRadius: "5px",
     transform: "translateX(-50px)",
     background: "transparent",
@@ -62,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
       content: "''",
       position: "absolute",
       width: "30px",
-      height: "5px",
+      height: "3px",
       background: "#000",
       borderRadius: "5px",
       transition: "all 0.5s ease-in-out",
@@ -72,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
       content: "''",
       position: "absolute",
       width: "30px",
-      height: "5px",
+      height: "3px",
       background: "#000",
       borderRadius: "5px",
       transition: "all 0.5s ease-in-out",
@@ -115,7 +115,7 @@ const useStyles = makeStyles((theme) => ({
 
 const data = [
   { name: "Home", Link: "/" },
-  { name: "Products", Link: "/products" },
+  { name: "Products", Link: "/product" },
   {
     name: "Category",
     Link: "/category",
@@ -157,8 +157,8 @@ const Navbar = ({ toggle }) => {
 
     <div className={classes.main}>
       <div className={classes.container}>
-        <div className={classes.wrapper}>
-          <div style={{cursor: 'pointer'}} onClick={() => setActive(!active)}>
+        <div style={{cursor: 'pointer'}} onClick={() => setActive(!active)} className={classes.wrapper}>
+          <div>
             <div
               className={active ? classes.activeHamburger : classes.hamburber}
             />
@@ -169,7 +169,7 @@ const Navbar = ({ toggle }) => {
         <ul className={classes.ul}>
           {data.map((item, i) => (
             <li key={i}>
-              <a href="#" className={classes.a}>
+              <a href={item.Link} className={classes.a}>
                 {item.name}
               </a>
             </li>
